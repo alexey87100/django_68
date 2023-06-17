@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Сотрудники со скилом {{ skill.name }}
+{% endblock %}
+
+{% block header %}
+Сотрудники со скилом {{ skill.name }}
+{% endblock %}
+
+{% block content %}
+{% for employee in employees %}
+  {{ employee }}
+{% endfor %}
+{% endblock %}
